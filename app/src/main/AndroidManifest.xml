@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PruebaFinal"
+        tools:targetApi="31">
+        <activity
+            android:name=".MapaActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MapaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".editarCliente"
+            android:exported="false"
+            android:label="@string/title_activity_editar_cliente"
+            android:theme="@style/Theme.PruebaFinal" />
+        <activity
+            android:name=".CrearCliente"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"></activity>
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="LMPuxVc1yQFsi5zNIuxK" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="Blj99U_ent0wdncf1gNf8Q" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="E4DD/wU/00ckz27hixU6i/hiq6+rhf7c5eNT9ESsMpacj0FsW7t1Xi3hh0eC38xz6Lc46Lqz0AMELCL93zLGM7tMkkg1iHc/wK87eaKB+t2Q7acQ+D2XGw1qKg1eQU2HOh7zwvR5b5WCamZ4MMfw2bOFAhJU3Rso4HA/zrhn32K45Jw0i1OAYHtwLOZlMPmOx4V5e+wwpybDzQ/11Io5h4t9ugNv3uFGVdmOFWwYZ3ctMrUccCpr7SPx1CtoYXx3vgjkWoPaf5DAL95mI4YAUVh+WCQ3T9NUFiIdeyJPt5thRNEK8AlRnXwd88CbqegTHkUDwDkUGUqudpJjgWDtjo1PaWbkwtc0BV6C/ORVVmrIOI/iVe43sG25qWeZ5tpmot1e7nMzppcsAaMZCQ1dZWOR13B/Hn1PDPqZ5PadGtA01P3J4ddOPi5ZljpuyPIC0IWVdT6q9uqe4vEy4xIboqs7Q+8cvQN51+r6YsChSt6Y8Taxp++Krfl6x+r6jDI1wGRqtRGjgIO661cYEvK9Mo5QA0iTFwiPa/W7S9vksQ/koQ4WrIo2iHZqVt9XpZx+tFN1lLwiRVsnJLAtpLC4hwOi9jzp32NbMMuKBZUD2kbfK1wAQ9TX6NFO4B/ulQSpI31ILWrx6+so0UkTVY3RQ8G88Hv3MtmPDnBQ5Z1DG7I=" />
+    </application>
+
+</manifest>

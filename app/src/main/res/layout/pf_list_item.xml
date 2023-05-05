@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:padding="16dp"
+        android:background="@drawable/borde_redondo">
+
+        <TextView
+            android:id="@+id/nombres"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="-79dp"
+            android:layout_toStartOf="@id/editarButton"
+            android:text="Nombre Completo del Cliente"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/telefono"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombres"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="-96dp"
+            android:layout_toStartOf="@id/editarButton"
+            android:text="Número de teléfono del cliente"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/correo"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/telefono"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="-96dp"
+            android:layout_toStartOf="@id/editarButton"
+            android:text="Correo electrónico del cliente"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/correo"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="-96dp"
+            android:layout_toStartOf="@id/editarButton"
+            android:text="Dirección del cliente (calle, colonia, municipio, estado, código postal)"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/eliminarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editarButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="140dp"
+            android:backgroundTint="@color/red"
+            app:icon="@drawable/ic_delete"
+            android:text="Eliminar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/editarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/direccion"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/blue"
+            app:icon="@drawable/ic_edit"
+            android:text="Editar"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+</layout>
